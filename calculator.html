@@ -6,6 +6,7 @@
   <input type="number" id="num2" placeholder="Second number"><br><br>
   <!-- Abebe: Addition -->
   <button onclick="add()">Add (+)</button>
+  <button onclick="modulo()">Modulo (%)</button>
   <!-- TEAM BUTTONS PLACEHOLDER -->
   <h3>Result: <span id="res">0</span></h3>
   <script>
@@ -14,6 +15,13 @@
       let b = Number(document.getElementById("num2").value);
       document.getElementById("res").innerText = a + b;
     }
+
+    function modulo() {
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      document.getElementById("res").innerText = a % b;
+    }
+    
     // TEAM FUNCTIONS PLACEHOLDER
   </script>
 </body>
