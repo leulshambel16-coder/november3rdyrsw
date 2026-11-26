@@ -7,6 +7,7 @@
   <!-- Abebe: Addition -->
   <button onclick="add()">Add (+)</button>
   <button onclick="modulo()">Modulo (%)</button>
+  <button onclick="sub()">subtraction (-)</button>
   <!-- TEAM BUTTONS PLACEHOLDER -->
   <h3>Result: <span id="res">0</span></h3>
   <script>
@@ -20,6 +21,12 @@
       let a = Number(document.getElementById("num1").value);
       let b = Number(document.getElementById("num2").value);
       document.getElementById("res").innerText = a % b;
+    }
+
+    function sub() {
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      document.getElementById("res").innerText = a - b;
     }
     
     // TEAM FUNCTIONS PLACEHOLDER
